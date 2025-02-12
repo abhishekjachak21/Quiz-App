@@ -30,4 +30,9 @@ public class QuestionService {
 		return questionDao.findByCategoryAndDifficultyLevel( category,  difficultyLevel);
 	}
 
+	public String addQuestion(Question question) {
+		questionDao.save(question);
+		return "sucess";
+	}
+
 }
