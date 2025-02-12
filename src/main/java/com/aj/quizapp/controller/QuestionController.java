@@ -24,7 +24,9 @@ public class QuestionController {
 
 	@GetMapping("/allQuestions")
 	public List<Question> getAllQuestions() {
-		return questionService.getAllQuestions();
+		List<Question> questions = questionService.getAllQuestions();
+	    System.out.println("Questions fetched: " + questions); // Log the data
+	    return questions;
 	}
 
 	@GetMapping("/category/{category}")
