@@ -41,24 +41,5 @@ public class QuizController {
 		return quizService.calculateResult(id, responses);
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }
  
